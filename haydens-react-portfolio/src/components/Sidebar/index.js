@@ -1,25 +1,35 @@
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import './index.scss';
 import homeButton from '../../assets/images/homeButton.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faLinkedin,
+  faGithub,
+} from '@fortawesome/free-brands-svg-icons'
+import {
+  faHome,
+  faUser,
+  faEnvelope,
+} from '@fortawesome/free-solid-svg-icons'
 
-const Layout = () => (
+const Sidebar = () => (
 <div className='nav-bar'>
-    <link className='logo' to='/'>
+    <Link className='logo' to='/'>
         <img src={homeButton} alt="homeButton" />
 
-    </link>
+    </Link>
     <nav>
-        <Navlink exact="true" activeclassname='active' to='/'>
+        <NavLink exact="true" activeclassname='active' to='/'>
             <FontAwesomeIcon icon = {faHome} color="#8b8b91" />
-        </Navlink>
+        </NavLink>
 
-        <Navlink exact="true" activeclassname='active' classname="about-link" to='/about'>
+        <NavLink exact="true" activeclassname='active' classname="about-link" to='/about'>
             <FontAwesomeIcon icon = {faUser} color="#8b8b91" />
-        </Navlink>
+        </NavLink>
 
-        <Navlink exact="true" activeclassname='active' className="contact-link" to='/contact'>
+        <NavLink exact="true" activeclassname='active' className="contact-link" to='/contact'>
             <FontAwesomeIcon icon = {faEnvelope} color="#8b8b91" />
-        </Navlink>
+        </NavLink>
     </nav>
     <ul>
         <li>
