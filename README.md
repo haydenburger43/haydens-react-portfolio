@@ -27,3 +27,6 @@ got some code from https://www.youtube.com/watch?v=bmpI252DmiI&ab_channel=freeCo
 ## links
 https://github.com/haydenburger43/haydens-react-portfolio
 
+## live link 
+https://hayden-portfolio.herokuapp.com/
+
